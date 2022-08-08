@@ -13,4 +13,5 @@ jobs:
           node-version: '16'
       - run: npm install
       - run: npm test
-      - run: echo "I don't care! I want it"
+      - if: 1 + 1 === 2
+        run: echo "I don't care! I want it"
